@@ -1,0 +1,36 @@
+---
+layout: default
+---
+  <div id="bannerimage">
+    <div id="bannertext">
+      Coders Academy
+    </div>
+  </div>
+
+
+    {% for post in site.posts %}
+    <div class="{% cycle 'blog-card', 'blog-card alt' %}">
+      <div class="meta">
+        <div class="photo" style="background-image: url({{ post.photourl }})"></div>
+        <ul class="details">
+          <li class="author"><a href="#">{{ post.author }}</a></li>
+          <li class="date">{{ page.date | date_to_long }}</li>
+          <li class="tags">
+            <ul>
+                {% for tag in post.tags %}
+              <li><a href="#">{{ tag }}</a></li>
+                {% endfor %}
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="description">
+        <h1>{{ post.title }}</h1>
+        <h2>{{ post.subtitle}}</h2>
+        <p> {{ post.resumo }}</p>
+        <p class="read-more">
+          <a href="{{ post.url | relative_url}}">Leia mais</a>
+        </p>
+      </div>
+    </div>
+    {% endfor %}

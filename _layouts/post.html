@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div >
+    <img class="bannerPostImage" src= "{{ site.baseurl }}/{{ page.photourl }}" width = 100%/>
+</div>
+
+<div class="postBodyContainer">
+
+    <div class="postMeta">
+        <div class="postMetaText">
+            <p>Postado em {{ page.date | date_to_long_string }} por {{ page.author }}</p>
+        </div>
+
+        <div class="postMetaTags">
+            <ul>
+                {% for tag in page.tags %}
+              <li><a href="#">{{ tag }}</a></li>
+                {% endfor %}
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="postContent">
+        {{ content }}
+    </div>
+
+</div>
+
+</div>
+
