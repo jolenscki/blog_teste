@@ -5,7 +5,7 @@ subtitle: "Como começar?"
 date:   2020-10-04 01:00:05 -0300
 categories: blog
 author: João Rodrigo Olenscki
-photourl: 'assets/images/html_image.png'
+photourl: "{{'assets/images/html_image.png' | relative_url}}"
 tags:
 - jekyll
 - html

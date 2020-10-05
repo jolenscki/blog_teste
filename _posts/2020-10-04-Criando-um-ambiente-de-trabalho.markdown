@@ -5,7 +5,7 @@ subtitle: "Uma introdução ao VS Code"
 date:   2020-10-04 01:00:05 -0300
 categories: blog
 author: João Rodrigo Olenscki
-photourl: 'assets/images/html_image.jpg'
+photourl: "{{'assets/images/html_image.jpg' | relative_url}}"
 tags:
 - vscode
 - code

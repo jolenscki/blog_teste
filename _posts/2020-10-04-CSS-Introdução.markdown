@@ -5,7 +5,7 @@ subtitle: "Aprenda a usar esta importante ferramenta"
 date:   2020-10-04 01:00:05 -0300
 categories: blog
 author: João Rodrigo Olenscki
-photourl: 'assets/images/css_banner.webp'
+photourl: "{{'assets/images/css_banner.webp' | relative_url}}"
 tags:
 - css
 - html
