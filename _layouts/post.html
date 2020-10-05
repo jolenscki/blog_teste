@@ -2,7 +2,7 @@
 layout: default
 ---
 <div >
-    <img class="bannerPostImage" src= "{{ site.baseurl }}/{{ page.photourl }}" width = 100%/>
+    <img class="bannerPostImage" src= "'{{ site.baseurl }}/{{ page.photourl }}' | relative_url" width = 100%/>
 </div>
 
 <div class="postBodyContainer">
