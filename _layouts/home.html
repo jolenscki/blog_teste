@@ -11,7 +11,7 @@ layout: default
     {% for post in site.posts %}
     <div class="{% cycle 'blog-card', 'blog-card alt' %}">
       <div class="meta">
-        <div class="photo" style="background-image: url({{ post.photourl }})"></div>
+        <div class="photo" style="background-image: url({{ post.photourl | relative_url}})"></div>
         <ul class="details">
           <li class="author"><a href="#">{{ post.author }}</a></li>
           <li class="date">{{ page.date | date_to_long }}</li>
